@@ -3,35 +3,46 @@
 lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
 
 # 1. Work out how many stops there are in the array
-puts lines.length()
+# puts lines.length()
 
-# 2. Return 'Edinburgh Park' from the array
+# # 2. Return 'Edinburgh Park' from the array
 
-puts lines[1]
+# puts lines[1]
 
-# 3. How many ways can we return 'Princes Street' from the array?
+# # 3. How many ways can we return 'Princes Street' from the array?
 
-puts lines[4]
-puts lines.last()
-puts lines[-1]
+# puts lines[4]
+# puts lines.last()
+# puts lines[-1]
 
-# 4. Work out the index position of 'Haymarket'
+# # 4. Work out the index position of 'Haymarket'
 
-puts lines.index('Haymarket')
+# puts lines.index('Haymarket')
 
-# 5. Add 'Airport' to the start of the array
+# # 5. Add 'Airport' to the start of the array
 
 lines.unshift('Airport')
 puts lines
 
-# 6. Add 'York Place' to the end of the array
+# # 6. Add 'York Place' to the end of the array
 
+lines << 'York Place'
+puts lines
 
-# 7. Remove 'Edinburgh Park' from the array using it's name
+# # 7. Remove 'Edinburgh Park' from the array using it's name
+
+lines.delete('Edinburgh Park')
+puts lines
 
 # 8. Delete 'Edinburgh Park' from the array by index
 
+lines.delete_at(1)
+puts lines
+
 # 9. Reverse the positions of the stops in the array
+
+# lines.reverse()
+# puts lines
 
 ### B. Given the following data structure:
 
