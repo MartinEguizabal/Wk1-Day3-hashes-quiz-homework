@@ -13,13 +13,19 @@ puts lines[1]
 
 puts lines[4]
 puts lines.last()
-
+puts lines[-1]
 
 # 4. Work out the index position of 'Haymarket'
 
+puts lines.index('Haymarket')
+
 # 5. Add 'Airport' to the start of the array
 
+lines.unshift('Airport')
+puts lines
+
 # 6. Add 'York Place' to the end of the array
+
 
 # 7. Remove 'Edinburgh Park' from the array using it's name
 
