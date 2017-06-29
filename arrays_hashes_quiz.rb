@@ -127,8 +127,29 @@ puts users["Erik"][:favourite_numbers].min()
 
 # 6. Add the number `7` to Erik's favorite numbers
 
+users["Erik"][:favourite_numbers].unshift(7)
+puts users["Erik"][:favourite_numbers]
+
 # 7. Change Erik's hometown to Edinburgh
+
+users["Erik"][:home_town] = "Edinburgh"
+puts users["Erik"][:home_town]
 
 # 8. Add a pet dog to Erik called "Fluffy"
 
+users["Erik"][:pets]["fluffy"] = :dog
+puts users["Erik"][:pets]
+
 # 9. Add yourself to the users hash
+
+users["Martin"] = [
+  :twitter => 'eggyblak', 
+  :favourite_numbers => [7, 8], 
+  :home_town => 'North Vancouver', 
+  :pets => [
+    'antface' => 'ant', 
+    'snoop dog' => 'dog'
+    ]
+  ]
+  
+puts users
